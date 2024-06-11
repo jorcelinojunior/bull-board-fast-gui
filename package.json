@@ -1,0 +1,48 @@
+{
+  "name": "bull-board-fast-gui",
+  "version": "0.0.1",
+  "description": "A Lightning-Fast Dashboard for Bull Queue Management",
+  "main": "index.js",
+  "author": "Jorcelino Junior",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorcelinojunior/bull-board-fast-gui.git"
+  },
+  "homepage": "https://github.com/jorcelinojunior/bull-board-fast-gui#readme",
+  "bugs": {
+    "url": "https://github.com/jorcelinojunior/bull-board-fast-gui/issues"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "bull-board-fast-gui": "index.js"
+  },
+  "keywords": [
+    "bull",
+    "bull-board",
+    "bullmq",
+    "cli",
+    "dashboard",
+    "express",
+    "fast",
+    "gui",
+    "jobs",
+    "lightning",
+    "queue",
+    "quick",
+    "redis"
+  ],
+  "dependencies": {
+    "@bull-board/api": "^5.20.1",
+    "@bull-board/express": "^5.20.1",
+    "@bull-board/ui": "^5.20.1",
+    "bull": "^4.12.9",
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
