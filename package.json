@@ -1,6 +1,6 @@
 {
   "name": "bull-board-fast-gui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Lightning-Fast Dashboard for Bull Queue Management",
   "main": "index.js",
   "author": "Jorcelino Junior",
