@@ -8,6 +8,8 @@
 Bull Board Fast GUI provides a quick and efficient way to visualize and manage your Bull queues through a user-friendly dashboard. 
 It's designed for developers who need to set up and monitor their queues rapidly without the need for installation or configuration in their own projects.
 
+![Dashboard Preview](./dashboard-preview.png)
+
 ## Features
 
 - Super fast setup and configuration
@@ -21,11 +23,11 @@ You can run Bull Board Fast GUI directly using `npx` without needing to install 
 
 ### Example
 
-To visualize and manage multiple queues (`movie-unprocessed`, `movie-image`, `movie-processed`) with a Redis server running locally:
+To visualize and manage multiple queues (`torrents`, `movie-processed`, `movie-unprocessed`, `image-movie`) with a Redis server running locally:
 
 ```bash
 BULL_CONNECTION=redis://localhost:6379 \
-BULL_QUEUES=movie-unprocessed,movie-image,movie-processed \
+BULL_QUEUES=torrents,movie-processed,movie-unprocessed,image-movie \
 BULL_PORT=3000 \
 npx bull-board-fast-gui
 ```
@@ -45,7 +47,7 @@ To run the dashboard, simply use the following command:
 
 ```bash
 BULL_CONNECTION=redis://localhost:6379 \
-BULL_QUEUES=movie-unprocessed,movie-image,movie-processed \
+BULL_QUEUES=torrents,movie-processed,movie-unprocessed,image-movie \
 BULL_PORT=3000 \
 npx bull-board-fast-gui
 ```
@@ -73,7 +75,7 @@ A comma-separated list of Bull queue names that you want to monitor.
 
 Example:
 ```bash
-BULL_QUEUES=movie-unprocessed,movie-image,movie-processed
+BULL_QUEUES=torrents,movie-processed,movie-unprocessed,image-movie
 ```
 
 ### `BULL_UI_BASE_PATH`
